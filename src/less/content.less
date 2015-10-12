@@ -1,0 +1,285 @@
+.main-content{
+  padding: 36px 0;
+  .row{
+    .block{
+      margin-bottom: 36px;
+      .block-content{
+        background: @course-bg;
+        border: 1px solid @course-border;
+        .rounded(5px);
+        .clearfix();
+        .list-group{
+          margin: 0;
+          .list-group-item{
+            position: relative;
+            border: none;
+            border-bottom: 1px solid @course-border;
+            border-left: 4px solid @course-bg;
+            .rounded();
+            margin: 0;
+            padding: 18px 19px 19px;
+            color: @curse-text-color;
+            &:hover{
+              color: @curse-hover-color;
+              .count-reply-questions{
+                background-position: left bottom;
+              }
+            }
+          }
+        }
+      }
+      &.tab-block-course{
+        .course-color(@course-color);
+      }
+      &.tab-block-questions{
+        .course-color(@questions-color);
+      }
+      &.tab-block-exams{
+        .course-color(@exams-color);
+      }
+      .rmrl-read-more,
+      .rmrl-read-less{
+        text-align: right;
+        padding: 7px 21px 9px 0px;
+        display: block;
+        a{
+          color: @course-readmore-color;
+          font-size: 12px;
+          line-height: 16px;
+          span{
+            display: inline-block;
+            .rotate(90deg);
+            font-size: 16px;
+            margin-left: 7px;
+          }
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .tab-block{
+      .nav-tabs{
+        border: none;
+        li{
+          width: 50%;
+          margin: 0;
+          a{
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            color: @h2-color;
+            padding: 9px 0 12px;
+            border-bottom: 1px solid @course-border;
+            margin: 0;
+            white-space: nowrap;
+            .tab-link-big{
+              font-size: 34px;
+              display: block;
+              font-weight: bold;
+              line-height: 47px;
+            }
+            &.first{
+              .rounded(5px 0 0 0);
+            }
+            &.last{
+              .rounded(0 5px 0 0);
+            }
+          }
+          &.active{
+            a{
+              border: 1px solid  @course-border;
+              border-bottom:  1px solid @course-bg ;
+              background: @course-bg;
+            }
+          }
+        }
+      }
+      .tab-content{
+        border-top: none;
+        padding-top: 1px;
+        .rounded(0 0 5px 5px);
+      }
+      .count-reply-questions{
+        display: block;
+        width: 14px;
+        height: 12px;
+        position: absolute;
+        left: 20px;
+        top: 21px;
+        background: url("../img/count_reply_icon.png") no-repeat left top;
+        padding-left: 17px;
+        line-height: 12px;
+      }
+      .item-questions{
+        display: block;
+        padding-left: 50px;
+      }
+      .progress-exam-container{
+        display: block;
+        width: 27px;
+        .rotate(-90deg);
+        position: absolute;
+        left: 20px;
+        bottom: -1px;
+        .progress-exam-bar{
+          display: block;
+          height: 30px;
+          background: @exams-color;
+          position: relative;
+          .progress-exam-count{
+            .rotate(90deg);
+            position: absolute;
+            width: 30px;
+            text-align: center;
+            font-size: 12px;
+            top: 7px;
+            right: -22px;
+          }
+        }
+      }
+      .item-exam{
+        display: block;
+        padding-left: 52px;
+      }
+    }
+    .block-experience{
+      .block-content{
+        padding: 16px 22px 0;
+        .rounded(5px 0 0 5px);
+        border-right: none;
+      }
+      .experience-gained{
+        .clearfix();
+        margin-bottom: 17px;
+        border-bottom: 1px solid @course-border;
+        padding-bottom: 10px;
+      }
+      .experience-title{
+        font-size: 16px;
+      }
+      .experience-bar{
+        margin: 12px 27px 0 4px;
+        color: @experience-color;
+        text-transform: uppercase;
+        font-size: 10px;
+        .experience-bar-row{
+          margin-right: 35px;
+          width: 44px;
+          .experience-bar-container{
+            background: @experience-bar-container;
+            width: 40px;
+            .rotate(-90deg);
+          }
+          .experience-bar-bar{
+            height: 44px;
+            background: @experience-bar;
+          }
+          &.last{
+            margin: 0;
+          }
+        }
+      }
+      .experience-month{
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 25px;
+        .experience-month-number{
+          color: @experience-bar;
+          font-size: 34px;
+          font-weight: bold;
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .block-friends{
+      .course-color(@questions-color);
+      .block-content{
+        .rounded(0 5px 5px 0);
+        padding-bottom: 5px;
+        .list-group{
+          .list-group-item{
+            padding: 0px 18px 0 20px;
+            border-bottom: none;
+          }
+        }
+      }
+      .friends-title{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: @h2-color;
+        font-weight: bold;
+        border-bottom: 1px solid @course-border;
+        padding: 15px 24px 12px;
+      }
+
+      .friend-photo{
+        display: block;
+        width: 29px;
+        height: 29px;
+        position: absolute;
+        left: 20px;
+        top: 13px;
+      }
+      .friend-content{
+        padding: 19px 80px 18px 43px;
+        display: block;
+        border-bottom: 1px solid @course-border;
+      }
+      .friend-name{
+        color: @link-color;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .friend-action-name{
+        color: @course-readmore-color;
+        font-weight: 600;
+      }
+      .friend-action-time{
+        display: block;
+        position: absolute;
+        right: 19px;
+        top: 18px;
+        font: 12px/18px @font-family-dop;
+        background: url("../img/time_icon.png") no-repeat left 5px;
+        padding-left: 15px;
+      }
+    }
+    .col-experience{
+      padding-right: 0;
+    }
+    .col-friends{
+      padding-left: 0;
+    }
+  }
+}
+
+.course-color(@color){
+  .nav-tabs{
+    li{
+      &.active{
+        a{
+          color: @color;
+        }
+      }
+    }
+  }
+  .block-content{
+    .list-group {
+      .list-group-item{
+        &:hover{
+          border-left: 4px solid @color;
+        }
+      }
+    }
+  }
+  .rmrl-read-more,
+  .rmrl-read-less{
+    a{
+      &:hover{
+        color: @color;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+/*
+ * Component: Sidebar
+ * ------------------
+ */
+
+.main-sidebar{
+  float: left;
+  width: @sidebar-width;
+  position: relative;
+  background: @sidebar-bg;
+  left: -@sidebar-width;
+  .sidebar-user-panel{
+    display: table;
+    width: 100%;
+    padding: 0 16px;
+    background: @hover-icon-bg;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    .sidebar-user-avatar,
+    .sidebar-user-name{
+      display: table-cell;
+      vertical-align: middle;
+      height: 90px;
+    }
+    .sidebar-user-avatar{
+      padding-right: 11px;
+    }
+  }
+  .sidebar-menu{
+    .nav-pills {
+      > li {
+        margin-bottom: 19px;
+        > a {
+          height: 48px;
+          font-size: @font-size-menu;
+          text-transform: uppercase;
+          color: @navbar-default-color;
+          padding: 0 0 0 77px;
+          line-height: 48px;
+          .sm-icon{
+            width: 26px;
+            height: 25px;
+            display: block;
+            background: url("../img/sidebar_menu_icon.png") no-repeat left top;
+            position: absolute;
+            left: 27px;
+            top: 11px;
+            &.sm-icon-course{
+              background-position: left -50px;
+            }
+            &.sm-icon-exam{
+              background-position: left -100px;
+            }
+            &.sm-icon-qa{
+              background-position: left -150px;
+            }
+            &.sm-icon-news{
+              background-position: left -200px;
+            }
+          }
+          &:hover,
+          &:focus{
+            .active-link-sidebar();
+          }
+        }
+        &.active{
+          a{
+            .active-link-sidebar();
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
+.active-link-sidebar{
+  color: @nav-pills-active-link-hover-color;
+  background-color: @nav-pills-active-link-hover-bg;
+  .sm-icon{
+    background-position: left -25px;
+    &.sm-icon-course{
+      background-position: left -75px;
+    }
+    &.sm-icon-exam{
+      background-position: left -125px;
+    }
+    &.sm-icon-qa{
+      background-position: left -175px;
+    }
+    &.sm-icon-news{
+      background-position: left -225px;
+    }
+  }
+}

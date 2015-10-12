@@ -1,0 +1,67 @@
+
+//== Colors
+@base-color: #7f8c8d;
+@link-color: #3498db;
+@h1-color: #2c3e50;
+@h2-color: #95a5a6;
+@head-bg: #fff;
+@body-bg: #ecf0f1;
+@badge-bg: #e74c3c;
+@badge-color: #fff;
+@tooltip-color: @head-bg;
+@tooltip-bg: @h1-color;
+
+
+//== Typography
+@font-family-base: "Proxima Nova", sans-serif;
+@font-family-dop: 'Open Sans', sans-serif;
+
+@font-size-base:          13px;
+@font-size-menu:          14px;
+
+@font-size-h1:            25px;
+@font-size-h2:            14px;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+@line-height-h1:    floor((@font-size-h1 * @line-height-base));
+@line-height-h2:    floor((@font-size-h2 * @line-height-base));
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+
+//== Sidebar
+@sidebar-width: 200px;
+@sidebar-bg: #34495e;
+@nav-pills-border-radius: 0;
+@nav-pills-active-link-hover-color: @head-bg;
+@nav-pills-active-link-hover-bg: #243342;
+@hover-icon-bg:#2ecc71;
+
+
+//== Navbar
+@navbar-height: 91px;
+@navbar-default-color: @h2-color;
+@navbar-default-bg: @head-bg;
+@navbar-default-border: #e5e5e5;
+
+//== Header
+@exp-color: #9ba3af;
+@header-bg: @head-bg;
+@head-menu-color: @h1-color;
+@head-menu-hover: @h1-color;
+
+
+//== Content
+@course-color: #e67333;
+@questions-color: #8e44ad;
+@exams-color: #16a085;
+@course-border: #dee1e2;
+@course-bg: @head-bg;
+@course-hover: #f6f8fc;
+@curse-hover-color: #586470;
+@curse-text-color: @base-color;
+@course-readmore-color: @h1-color;
+@experience-bar-container: #eaedf1;
+@experience-bar: @hover-icon-bg;
+@experience-color: #9ea7b3;

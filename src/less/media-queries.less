@@ -1,0 +1,86 @@
+@media (max-width: @screen-xs-max) {
+  .wrapper{
+    .user-action{
+      float: left !important;
+    }
+    .main-header{
+      .navbar-nav{
+        float: left;
+      }
+      .navbar-form{
+        float: right;
+        border-top: none;
+        .form-control{
+          display: inline-block;
+          &:focus{
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: @screen-sm-max){
+  .wrapper{
+    .main-content{
+      .row{
+        .col-experience,
+        .col-friends{
+          padding: 0 15px;
+          .block-content{
+            .rounded(5px);
+            border-right: 1px solid @course-border;
+          }
+        }
+      }
+    }
+    .main-sidebar{
+      width: 75px;
+      left: -75px;
+      .sidebar-user-panel{
+        padding-right: 0;
+      }
+      .sidebar-menu{
+        .nav-pills{
+          & > li{
+            position: relative;
+            height: 48px;
+            width: 75px;
+            & > a{
+              padding-left: 0;
+              span{
+                display: none;
+              }
+              &:hover,
+              &:focus{
+                position: absolute;
+                width: 200px;
+                padding-left: 77px;
+                span{
+                  display: inline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-container {
+      border-left: 75px solid #34495E;
+    }
+  }
+  .site-bg{
+    padding: 0 !important;
+  }
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+
+}
+@media (min-width: @screen-lg-min){
+  .col-experience{
+    width: 34.7%;
+  }
+  .col-friends{
+    width: 65.3%;
+  }
+}

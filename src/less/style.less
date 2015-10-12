@@ -1,0 +1,90 @@
+@import "fonts.less";
+
+// Core variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less";
+@import "bootstrap/glyphicons.less";
+
+// Core CSS
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/type.less";
+@import "bootstrap/code.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/tables.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/buttons.less";
+
+// Components
+@import "bootstrap/component-animations.less";
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+@import "bootstrap/badges.less";
+@import "bootstrap/list-group.less";
+
+// Components w/ JavaScript
+@import "bootstrap/tooltip.less";
+
+// Utility classes
+@import "bootstrap/utilities.less";
+@import "bootstrap/responsive-utilities.less";
+
+@import "mixins.less";
+@import "variables.less";
+@import "sidebar.less";
+@import "header.less";
+@import "content.less";
+@import "media-queries.less";
+
+
+body {
+  font: normal @font-size-base/@line-height-computed @font-family-base;
+  color: @base-color;
+}
+h1{
+  font: bold @font-size-h1/@line-height-h1 @font-family-base;
+  color: @h1-color;
+  text-transform: uppercase;
+}
+a{
+  &:focus {
+    outline: none;
+  }
+}
+.site-bg{
+  min-height: 100%;
+  #gradient > .vertical(#4a88c5; #b5c9db);
+  padding: 78px 0 82px;
+}
+.wrapper{
+  .clearfix();
+  min-height: 100%;
+  max-width: 1333px;
+  min-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: @body-bg;
+  .box-shadow(0px 4px 9px 0px rgba(0, 0, 0, 0.6));
+}
+.main-container{
+  border-left: @sidebar-width solid @sidebar-bg;
+  position: relative;
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+.main-wrapper{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-right: -100%;
+}
+.container-fluid {
+  padding: 0px 4%;
+}
